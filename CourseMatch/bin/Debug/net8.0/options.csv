@@ -1,0 +1,8 @@
+Question ID,Option Key,Option Text,Next Step,,,,,,,,,,
+Q1,A,Computers and Technology,Q2-Tech,,,,,,,,,,
+Q1,B,Building and Designing Things,Q2-Civil,,,,,,,,,,
+Q2-Tech,A,Solving problems with computers,Match -> Computer Science,,,,,,,,,,
+Q2-Tech,B,Building gadgets and machines,Match -> Computer Engineering,,,,,,,,,,
+Q2-Civil,A,Designing buildings and spaces,Match -> Architecture,,,,,,,,,,A
+Q2-Civil,B,Bringing designs to life,Match -> Civil Engineering,,,,,,,,,,
+Q1,C,Electrical Systems and Power,Match -> Electrical Engineering,,,,,,,,,,

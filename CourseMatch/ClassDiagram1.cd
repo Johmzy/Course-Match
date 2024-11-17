@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CourseMatch.CourseManager.AddCourse">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CourseManager\AddCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.CourseManager.DeleteCourse">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>CourseManager\DeleteCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.CourseManager.LoadFile">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>CourseManager\LoadFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.CourseManager.SaveFile">
+    <Position X="8.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CourseManager\SaveFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.CourseManager.ViewCourses">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CourseManager\ViewCourses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.Logic.Match">
+    <Position X="4" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Match.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.MenuUI.AdminMenu">
+    <Position X="1.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>MenuUI\AdminMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.MenuUI.Menu">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>MenuUI\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.MenuUI.UserMenu">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>MenuUI\UserMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.UserManagement.Authentication">
+    <Position X="5" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Class Name="CourseMatch.UserManagement.Authentication.VerificationResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UserManagement\Authentication.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserManagement\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.UserManagement.Login">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA=</HashCode>
+      <FileName>UserManagement\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.UserManagement.User">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEQAAABEAAAAAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>UserManagement\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CourseMatch.Courses.CourseDetails">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CourseManager\CourseDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

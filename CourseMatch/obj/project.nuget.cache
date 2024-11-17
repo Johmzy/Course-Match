@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "92mhB7PN+VQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\OMAYAN\\source\\repos\\CourseMatch\\CourseMatch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\OMAYAN\\.nuget\\packages\\consoletables\\2.6.2\\consoletables.2.6.2.nupkg.sha512",
+    "C:\\Users\\OMAYAN\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
+    "C:\\Users\\OMAYAN\\.nuget\\packages\\wcwidth\\1.0.0\\wcwidth.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

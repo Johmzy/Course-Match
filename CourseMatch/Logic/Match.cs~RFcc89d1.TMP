@@ -1,0 +1,133 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Formats.Asn1.AsnWriter;
+
+namespace CourseMatch.Logic
+{
+    internal class Match 
+    {
+        static bool AskQuestion(string question)
+        {
+            string Answer = "";
+            while (Answer != "yes" && Answer != "no")
+            {
+                Console.WriteLine($"{question}? (yes/no)");
+                Answer = Console.ReadLine();
+            }
+            return Answer == "yes";
+        }
+
+        public void Questions()
+        {
+            bool enjoysProblemSolving = AskQuestion("When faced with challenges, do you find joy in figuring out solutions?");
+            bool prefersHandsOnWork = AskQuestion("Do you thrive when you can engage in activities that require your physical involvement?");
+            bool enjoysHardware = AskQuestion("Do you feel satisfied when you can manipulate and work with tangible objects or devices?");
+            bool interestedInBio = AskQuestion("Are you intrigued by the mysteries of living systems and how they function?");
+            bool enjoysDesign = AskQuestion("Do you enjoy expressing yourself through visual or artistic means?");
+            bool interestedInBusiness = AskQuestion("Are you interested in understanding how organizations operate and succeed?");
+            bool enjoysDataAnalysis = AskQuestion("Do you find patterns or insights fascinating when you look at a collection of information?");
+            bool enjoysArchitecture = AskQuestion("Do you enjoy visualizing how spaces come together and thinking about their purpose?");
+            bool enjoysMath = AskQuestion("Do numbers and patterns make you feel excited or curious?");
+            bool enjoysPhysics = AskQuestion("Are you captivated by understanding the fundamental principles that govern the universe?");
+            bool enjoysSoftwareDev = AskQuestion("Do you find joy in crafting solutions that operate behind the scenes in technology?");
+            bool enjoysCommunication = AskQuestion("Do you enjoy connecting with others and sharing ideas in engaging ways?");
+
+            RecommendCourse(enjoysProblemSolving, prefersHandsOnWork, enjoysHardware,
+                    interestedInBio, enjoysDesign, interestedInBusiness,
+                    enjoysDataAnalysis, enjoysArchitecture, enjoysMath,
+                    enjoysPhysics, enjoysSoftwareDev, enjoysCommunication);
+        }
+
+        public void RecommendCourse(bool enjoysProblemSolving, bool prefersHandsOnWork,
+                                     bool enjoysHardware, bool interestedInBio,
+                                     bool enjoysDesign, bool interestedInBusiness,
+                                     bool enjoysDataAnalysis, bool enjoysArchitecture,
+                                     bool enjoysMath, bool enjoysPhysics,
+                                     bool enjoysSoftwareDev, bool enjoysCommunication)
+        {
+            string filePath = "Curriculum.csv";
+
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("No curricula found.");
+                return;
+            }
+
+            string[] lines = File.ReadAllLines(filePath);
+
+            if (lines.Length == 0)
+            {
+                Console.WriteLine("No Curricula Found.");
+                return;
+            }
+
+            string bestCourse = null;
+            int bestMatchScore = 0;  // Highest score
+
+            for (int i = 1; i < lines.Length; i++)
+            {
+                string courseTitle = lines[i].Trim();  // Assuming each line now only contains the course title
+                int score = 0;  // Initialize score for this course
+
+                // Score each course based on how well it matches the user's responses
+                if (courseTitle == "Computer Science")
+                {
+                    if (enjoysProblemSolving) score++;  
+                    if (enjoysMath) score++;             
+                }
+                if (courseTitle == "Computer Engineering")
+                {
+                    if (enjoysProblemSolving) score++;
+                    if (prefersHandsOnWork) score++;
+                }
+                if (courseTitle == "Biology" && interestedInBio) score++;
+                if (courseTitle == "Business Administration" && interestedInBusiness) score++;
+                if (courseTitle == "Architecture" && enjoysArchitecture) score++;
+                if (courseTitle == "Mechanical Engineering")
+                {
+                    if (enjoysMath) score++;
+                    if (enjoysPhysics) score++;
+                }
+                if (courseTitle == "Electrical Engineering")
+                {
+                    if (enjoysMath) score++;
+                    if (enjoysPhysics) score++;
+                }
+                if (courseTitle == "Civil Engineering")
+                {
+                    if (interestedInBio) score++;
+                    if (prefersHandsOnWork) score++;
+                }
+                if (courseTitle == "Chemical Engineering")
+                {
+                    if (enjoysMath) score++;
+                    if (prefersHandsOnWork) score++;
+                }
+                if (courseTitle == "Software Engineering" && enjoysSoftwareDev) score++;
+                if (courseTitle == "Media Studies" && enjoysCommunication) score++;
+
+                if (score > bestMatchScore)
+                {
+                    bestMatchScore = score;
+                    bestCourse = courseTitle;
+                }
+            }
+
+            if (bestCourse != null)
+            {
+                Console.WriteLine($"Recommended Course: {bestCourse}");
+            }
+            else
+            {
+                Console.WriteLine("No match found. Consider exploring courses that interest you!");
+            }
+
+            Console.WriteLine("Remember, success is not a race. Everyone has their own unique story and timeline. Take the time to explore your interests and passions!");
+        }
+    }
+
+}
+
